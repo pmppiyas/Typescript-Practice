@@ -1,8 +1,8 @@
 "use strict";
-const studentData = {
+const studentAlias = {
     name: "Piyas",
     age: 20,
     class: "10th",
     school: "ABC High School",
 };
-console.log(studentData);
+console.log(studentAlias);

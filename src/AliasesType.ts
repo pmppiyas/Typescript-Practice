@@ -5,10 +5,10 @@ type StudentData = {
   school: string;
 };
 
-const studentData: StudentData = {
+const studentAlias: StudentData = {
   name: "Piyas",
   age: 20,
   class: "10th",
   school: "ABC High School",
 };
-console.log(studentData);
+console.log(studentAlias);
