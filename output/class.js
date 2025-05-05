@@ -1,5 +1,6 @@
 "use strict";
 {
+    ///// OOP- class
     class Animal {
         // name: string;
         // sound: string;

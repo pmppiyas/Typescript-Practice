@@ -1,9 +1,6 @@
 {
   ///// OOP- class
-  interface AnimaleInterface {
-    // name: string;
-    // sound: string;
-  }
+
   class Animal {
     // name: string;
     // sound: string;
