@@ -9,7 +9,7 @@
             this.size = size;
         }
         makeDetails() {
-            console.log(`Name: ${this.name}, Species: ${this.species}, Age: ${this.aGe} ${this.size ? `, Size: ${this.size} kg` : ''}`);
+            console.log(`Name: ${this.name}, Species: ${this.species}, Age: ${this.aGe} ${this.size ? `, Size: ${this.size} kg` : ""}`);
         }
     }
     class Dog extends Animal {

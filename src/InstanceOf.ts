@@ -15,7 +15,9 @@
 
     makeDetails(): void {
       console.log(
-        `Name: ${this.name}, Species: ${this.species}, Age: ${this.aGe} ${this.size ? `, Size: ${this.size} kg` : ''}`
+        `Name: ${this.name}, Species: ${this.species}, Age: ${this.aGe} ${
+          this.size ? `, Size: ${this.size} kg` : ""
+        }`
       );
     }
   }
@@ -51,9 +53,6 @@
     }
   }
 
-  
-    
-  
   const dogMama = new Dog("Dog Mama", "Dog", 5);
   // dogMama.makeDetails();
   // dogMama.makeBurk();
@@ -67,44 +66,35 @@
 
   //Get Animal
   /////Smart way
-  const isDog = (animal: Animal): animal is Dog=> {
+  const isDog = (animal: Animal): animal is Dog => {
     return animal instanceof Dog;
-  }
+  };
 
   const isCat = (animal: Animal): animal is Cat => {
     return animal instanceof Cat;
-  }
+  };
 
   const isFish = (animal: Animal): animal is Fish => {
     return animal instanceof Fish;
-  }
+  };
 
-  const getAnimal = (animal: Animal){
+  const getAnimal = (animal: Animal) => {
     if (animal) {
-      animal.makeDetails()
+      animal.makeDetails();
     }
 
     if (isDog(animal)) {
-      animal.makeBurk()
+      animal.makeBurk();
+    } else if (isCat(animal)) {
+      animal.makeMeow();
+    } else if (isFish(animal)) {
+      animal.makeFry();
+    } else {
+      console.log("Plaese provide a valid animal");
     }
-    else if (isCat(animal)) {
-     
-      animal.makeMeow()
-    }
-    else if (isFish(animal)){
-      animal.makeFry()
-    }
-    else {
-      console.log("Plaese provide a valid animal")
-    }
-  
-  }
-
+  };
 
   getAnimal(fishMama);
-
-
-
 
   /////////////////()
 }
